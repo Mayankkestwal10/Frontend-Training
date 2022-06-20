@@ -1,0 +1,16 @@
+Lifecycle of a component
+The various phases of a react component from mounting till destruction
+
+
+1. Mounting - when an instance of a component inserted into DOM
+    method - constructor, getDerivedStateFromProps, render, componentDidMount
+
+2. Updating - when there is change in props or state, updation of DOM happens
+    method - getDerivedStateFromProps, shouldComponentUpdate, render, getSnapshotBeforeUpdate, componentDidUpdate
+
+3. Unmounting - when an instance of a component get removed from DOM
+    method - componentWillUnmount
+
+4. Error handling - happens when an error occurs in a component or nested child component
+    method - getDerivedStateFromError, ComponentDidCatch
+

@@ -1,0 +1,27 @@
+1. Functional Components
+- Stateless
+- cannot handle state without hooks
+- No component lifecycle methods but can achieve with hooks
+
+const Note = () => {
+  return <h1>Mayank kestwal</h1>
+}
+
+2. Class based Components
+- Stateful
+- can handle state
+- Component Lifecycle method available
+
+class Note extends React.Component{
+  constructor(props){
+    super(props)
+    this.state = {
+      name: "Mayank kestwal"
+    }
+  }
+  render(){
+    return(
+      <h1>{this.state.name}</h1>
+    )
+  }
+}
